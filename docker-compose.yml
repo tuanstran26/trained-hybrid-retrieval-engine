@@ -1,0 +1,13 @@
+services:
+  retrieval-api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      BI_MODEL_PATH: /app/artifacts/models/bi-encoder-hard-neg-v2
+      CE_MODEL_PATH: /app/artifacts/models/cross-encoder-stackoverflow-v2
+      CACHE_FILE: /app/artifacts/data/id_text_lookup_question_body_cache.json
+      DAY3_RES_FILE: /app/artifacts/data/day3_final_reranked_results.json
+    volumes:
+      - ./artifacts:/app/artifacts:ro
+    restart: unless-stopped

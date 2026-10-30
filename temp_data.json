@@ -1,0 +1,21 @@
+{
+    "question_id": 9,
+    "answer_id": 1404,
+    "title": "How do I calculate someone's age based on a DateTime type birthday?",
+    "question_body": "Given a DateTime representing a person's birthday, how do I calculate their age in years?",
+    "answer_body": "An easy to understand and simple solution. // Save today's date. var today = DateTime.Today;\n\n// Calculate the age. var age = today.Year - birthdate.Year;\n\n// Go back to the year in which the person was born in case of a leap year if (birthdate.Date > today.AddYears(-age)) age--; However, this assumes you are looking for the western idea of the age and not using East Asian reckoning.",
+    "question_text": "How do I calculate someone's age based on a DateTime type birthday? Given a DateTime representing a person's birthday, how do I calculate their age in years?",
+    "combined_text": "TITLE:\nHow do I calculate someone's age based on a DateTime type birthday?\n\nQUESTION:\nGiven a DateTime representing a person's birthday, how do I calculate their age in years?\n\nANSWER:\nAn easy to understand and simple solution. // Save today's date. var today = DateTime.Today;\n\n// Calculate the age. var age = today.Year - birthdate.Year;\n\n// Go back to the year in which the person was born in case of a leap year if (birthdate.Date > today.AddYears(-age)) age--; However, this assumes you are looking for the western idea of the age and not using East Asian reckoning.",
+    "tags": [
+        "c#",
+        ".net",
+        "datetime"
+    ],
+    "question_score": 2248,
+    "answer_score": 2417,
+    "view_count": 827598,
+    "answer_count": 75,
+    "favorite_count": 0,
+    "question_creation_date": "2008-07-31T23:40:59.743000",
+    "answer_creation_date": "2008-08-04T16:50:06.170000"
+}

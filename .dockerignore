@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.git/
+.gitignore
+.vscode/
+.idea/
+.venv/
+venv/
+env/
+artifacts/
+checkpoints/
+*.arrow
+*.log
+output.txt

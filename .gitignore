@@ -1,0 +1,24 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.vscode/
+.idea/
+
+# Logs & temp outputs
+*.log
+output.txt
+
+# Heavy ML Models & Checkpoints (Keep on local disk / HuggingFace Hub)
+artifacts/models/
+*.safetensors
+*.pt
+*.bin
+
+# Heavy Dataset & Cache files (Keep only lightweight markdown report)
+artifacts/data/*.arrow
+artifacts/data/*.jsonl
+artifacts/data/*.json
+!artifacts/data/error_analysis_20_failures.md
